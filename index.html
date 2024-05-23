@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portofolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -37,14 +42,14 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container" data-aos="fade-right">
         <img
           src="./assets/profile-pic.png"
           alt="John Doe profile picture"
           class="profile_img"
         />
       </div>
-      <div class="section__text">
+      <div class="section__text" data-aos="fade-left">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title mb-1">Muhamad Haisyam Khairizmi</h1>
         <!-- <p class="section__text__p2">Frontend Developer</p> -->
@@ -77,8 +82,8 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title mb-1">About Me</h1>
+      <p class="section__text__p1" data-aos="fade-right">Get To Know More</p>
+      <h1 class="title mb-1" data-aos="fade-left">About Me</h1>
       <div class="section-container">
         <!-- <div class="section__pic-container">
           <img
@@ -88,7 +93,7 @@
           />
         </div> -->
         <div class="about-details-container">
-          <div class="about-containers">
+          <div class="about-containers" data-aos="zoom-in">
             <!-- <div class="details-container">
               <img
                 src="./assets/experience.png"
@@ -108,7 +113,7 @@
               <p>SMKN 1 KERTAJATI</p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-container" data-aos="zoom-in-up">
             <p>
               Lulusan dari SMKN 1 Kertajati jurusan Teknik Pesawat Udara dengan
               minat besar di bidang IT. Selama belajar di SMKN, saya memperoleh
@@ -134,11 +139,11 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1" data-aos="fade-right">Explore My</p>
+      <h1 class="title" data-aos="fade-left">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container" data-aos="zoom-in">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -176,7 +181,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container" data-aos="zoom-in">
             <h2 class="experience-sub-title">Framework</h2>
             <div class="article-container">
               <article>
@@ -202,11 +207,14 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p class="section__text__p1" data-aos="fade-right">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-left">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-up-right"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
@@ -230,7 +238,10 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-up-left"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
@@ -256,7 +267,10 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-up-right"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
@@ -280,7 +294,10 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-up-left"
+          >
             <div class="article-container">
               <img
                 src="./assets/project-4.png"
@@ -316,9 +333,9 @@
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+      <p class="section__text__p1" data-aos="fade-right">Get in Touch</p>
+      <h1 class="title" data-aos="fade-left">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="zoom-out-up">
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
@@ -361,5 +378,12 @@
       <p>Copyright &#169; 2024 Haisyam - All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: false,
+        once: false,
+      });
+    </script>
   </body>
 </html>
